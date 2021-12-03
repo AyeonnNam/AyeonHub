@@ -1,8 +1,7 @@
   
   function kakaoShare(){
   
-    Kakao.Link.createDefaultButton({
-        container: '#CONTAINER_ID',
+    Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
           title: '오늘의 디저트',
@@ -42,7 +41,7 @@
               itemOp: '5000원',
             },
           ],
-          sum: 'Total',
+          sum: '총 결제금액',
           sumOp: '15000원',
         },
         social: {
@@ -65,5 +64,6 @@
           },
         ]
       });
+      
 
 }
